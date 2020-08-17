@@ -1,0 +1,5 @@
+uint32 num_counts     # Goal field
+---                   # Separator
+string result_message # Result field
+---                   # Separator
+uint32 counts_elapsed # Feedback field

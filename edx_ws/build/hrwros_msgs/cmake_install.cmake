@@ -46,6 +46,22 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/action" TYPE FILE FILES "/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/action/CounterWithDelay.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/msg" TYPE FILE FILES
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayAction.msg"
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayActionGoal.msg"
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayActionResult.msg"
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayActionFeedback.msg"
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayGoal.msg"
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayResult.msg"
+    "/home/abhish/tutorial_ws/edx_ws/devel/share/hrwros_msgs/msg/CounterWithDelayFeedback.msg"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hrwros_msgs/cmake" TYPE FILE FILES "/home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs/catkin_generated/installspace/hrwros_msgs-msg-paths.cmake")
 endif()
 

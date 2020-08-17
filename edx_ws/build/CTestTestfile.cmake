@@ -6,5 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("hrwros_utilities")
-subdirs("hrwros_msgs")
 subdirs("hrwros_week2")
+subdirs("hrwros_msgs")

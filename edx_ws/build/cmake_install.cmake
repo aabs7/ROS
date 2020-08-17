@@ -132,8 +132,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/abhish/tutorial_ws/edx_ws/build/gtest/cmake_install.cmake")
   include("/home/abhish/tutorial_ws/edx_ws/build/hrwros_utilities/cmake_install.cmake")
-  include("/home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs/cmake_install.cmake")
   include("/home/abhish/tutorial_ws/edx_ws/build/hrwros_week2/cmake_install.cmake")
+  include("/home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs/cmake_install.cmake")
 
 endif()
 
