@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg/SensorInformation.msg"
-services_str = ""
+services_str = "/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv"
 pkg_name = "hrwros_msgs"
 dependencies_str = "std_msgs;sensor_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

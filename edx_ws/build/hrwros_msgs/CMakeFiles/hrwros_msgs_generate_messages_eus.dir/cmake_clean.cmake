@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hrwros_msgs_generate_messages_eus"
   "/home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/msg/SensorInformation.l"
+  "/home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/srv/ConvertMetersToFeet.l"
   "/home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/manifest.l"
 )
 

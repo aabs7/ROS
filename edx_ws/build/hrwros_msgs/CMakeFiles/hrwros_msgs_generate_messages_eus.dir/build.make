@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/abhish/tutorial_ws/edx_ws/build
 include hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus.dir/progress.make
 
 hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/msg/SensorInformation.l
+hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/srv/ConvertMetersToFeet.l
 hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/manifest.l
 
 
@@ -64,12 +65,18 @@ hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from hrwros_msgs/SensorInformation.msg"
 	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg/SensorInformation.msg -Ihrwros_msgs:/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p hrwros_msgs -o /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/msg
 
+/home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/srv/ConvertMetersToFeet.l: /opt/ros/melodic/lib/geneus/gen_eus.py
+/home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/srv/ConvertMetersToFeet.l: /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from hrwros_msgs/ConvertMetersToFeet.srv"
+	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv -Ihrwros_msgs:/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p hrwros_msgs -o /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/srv
+
 /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/manifest.l: /opt/ros/melodic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp manifest code for hrwros_msgs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp manifest code for hrwros_msgs"
 	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs hrwros_msgs std_msgs sensor_msgs
 
 hrwros_msgs_generate_messages_eus: hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus
 hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/msg/SensorInformation.l
+hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/srv/ConvertMetersToFeet.l
 hrwros_msgs_generate_messages_eus: /home/abhish/tutorial_ws/edx_ws/devel/share/roseus/ros/hrwros_msgs/manifest.l
 hrwros_msgs_generate_messages_eus: hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_eus.dir/build.make
 

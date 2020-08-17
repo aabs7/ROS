@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hrwros_msgs_generate_messages_cpp"
   "/home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/SensorInformation.h"
+  "/home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h"
 )
 
 # Per-language clean rules from dependency scanning.

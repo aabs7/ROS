@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /home/abhish/tutorial_ws/edx_ws/build
 include hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py.dir/progress.make
 
 hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/_SensorInformation.py
+hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/_ConvertMetersToFeet.py
 hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/__init__.py
+hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/__init__.py
 
 
 /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/_SensorInformation.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
@@ -64,14 +66,28 @@ hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py: /home/abhish/tutorial_w
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG hrwros_msgs/SensorInformation"
 	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg/SensorInformation.msg -Ihrwros_msgs:/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p hrwros_msgs -o /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg
 
+/home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/_ConvertMetersToFeet.py: /opt/ros/melodic/lib/genpy/gensrv_py.py
+/home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/_ConvertMetersToFeet.py: /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV hrwros_msgs/ConvertMetersToFeet"
+	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv -Ihrwros_msgs:/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p hrwros_msgs -o /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv
+
 /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
 /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/__init__.py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/_SensorInformation.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for hrwros_msgs"
+/home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/__init__.py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/_ConvertMetersToFeet.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for hrwros_msgs"
 	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg --initpy
+
+/home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/__init__.py: /opt/ros/melodic/lib/genpy/genmsg_py.py
+/home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/__init__.py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/_SensorInformation.py
+/home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/__init__.py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/_ConvertMetersToFeet.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for hrwros_msgs"
+	cd /home/abhish/tutorial_ws/edx_ws/build/hrwros_msgs && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv --initpy
 
 hrwros_msgs_generate_messages_py: hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py
 hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/_SensorInformation.py
+hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/_ConvertMetersToFeet.py
 hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/msg/__init__.py
+hrwros_msgs_generate_messages_py: /home/abhish/tutorial_ws/edx_ws/devel/lib/python2.7/dist-packages/hrwros_msgs/srv/__init__.py
 hrwros_msgs_generate_messages_py: hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_py.dir/build.make
 
 .PHONY : hrwros_msgs_generate_messages_py

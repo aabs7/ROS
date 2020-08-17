@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/abhish/tutorial_ws/edx_ws/build
 include hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_cpp.dir/progress.make
 
 hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_cpp: /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/SensorInformation.h
+hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_cpp: /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h
 
 
 /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/SensorInformation.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
@@ -64,8 +65,16 @@ hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_cpp: /home/abhish/tutorial_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from hrwros_msgs/SensorInformation.msg"
 	cd /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs && /home/abhish/tutorial_ws/edx_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg/SensorInformation.msg -Ihrwros_msgs:/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p hrwros_msgs -o /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
 
+/home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h: /opt/ros/melodic/lib/gencpp/gen_cpp.py
+/home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h: /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv
+/home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h: /opt/ros/melodic/share/gencpp/msg.h.template
+/home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h: /opt/ros/melodic/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/abhish/tutorial_ws/edx_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from hrwros_msgs/ConvertMetersToFeet.srv"
+	cd /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs && /home/abhish/tutorial_ws/edx_ws/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/srv/ConvertMetersToFeet.srv -Ihrwros_msgs:/home/abhish/tutorial_ws/edx_ws/src/hrwros_msgs/msg -Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg -Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg -p hrwros_msgs -o /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs -e /opt/ros/melodic/share/gencpp/cmake/..
+
 hrwros_msgs_generate_messages_cpp: hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_cpp
 hrwros_msgs_generate_messages_cpp: /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/SensorInformation.h
+hrwros_msgs_generate_messages_cpp: /home/abhish/tutorial_ws/edx_ws/devel/include/hrwros_msgs/ConvertMetersToFeet.h
 hrwros_msgs_generate_messages_cpp: hrwros_msgs/CMakeFiles/hrwros_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : hrwros_msgs_generate_messages_cpp
