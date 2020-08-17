@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="version2urdf">
+  <link
+    name="fuselage">
+    <inertial>
+      <origin
+        xyz="0.0210429966114199 -0.413441690290631 1.18877798219384"
+        rpy="0 0 0" />
+      <mass
+        value="16.0412782715158" />
+      <inertia
+        ixx="0.0729086425483959"
+        ixy="0.00215001857826141"
+        ixz="1.70652029840901E-05"
+        iyy="0.470784517247325"
+        iyz="-1.60752267850691E-05"
+        izz="0.463476077516123" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/fuselage.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/fuselage.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Wing ">
+    <inertial>
+      <origin
+        xyz="0.0958716297993096 0.00746454903532423 7.89812719308447E-05"
+        rpy="0 0 0" />
+      <mass
+        value="11.3298064655347" />
+      <inertia
+        ixx="3.48939634447567"
+        ixy="-0.000284425766516022"
+        ixz="-2.56392954797407E-05"
+        iyy="3.52146414129632"
+        iyz="1.21805435088431E-05"
+        izz="0.033843686629132" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Wing .STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Wing .STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Fuselage-Wing P"
+    type="fixed">
+    <origin
+      xyz="-0.10252 -1.1888 -0.32825"
+      rpy="1.5708 0 0" />
+    <parent
+      link="fuselage" />
+    <child
+      link="Wing " />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Aileron P">
+    <inertial>
+      <origin
+        xyz="-0.0046635 -0.0023363 0.20211"
+        rpy="0 0 0" />
+      <mass
+        value="0.15635" />
+      <inertia
+        ixx="0.0022229"
+        ixy="2.0644E-06"
+        ixz="0.00020373"
+        iyy="0.0022596"
+        iyz="5.7834E-07"
+        izz="4.0105E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Aileron P.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Aileron P.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wing-aileron P"
+    type="continuous">
+    <origin
+      xyz="0.19926 0.0059198 0.47877"
+      rpy="0.002711 7.7252E-05 -0.029585" />
+    <parent
+      link="Wing " />
+    <child
+      link="Aileron P" />
+    <axis
+      xyz="0.091284 0.0012502 -0.99582" />
+  </joint>
+  <link
+    name="Aileron S">
+    <inertial>
+      <origin
+        xyz="-0.00612955950418764 -0.0022764270168687 -0.210251376655586"
+        rpy="0 0 0" />
+      <mass
+        value="0.163490345468681" />
+      <inertia
+        ixx="0.00232643285155238"
+        ixy="2.25432962694595E-06"
+        ixz="-0.000213225598541998"
+        iyy="0.00236580176769708"
+        iyz="-7.88699407058446E-07"
+        izz="4.30310004601844E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Aileron S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Aileron S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Wing-Aileron S"
+    type="continuous">
+    <origin
+      xyz="0.2 0.0059299 -0.47074"
+      rpy="-0.0074614 -0.00040676 -0.081532" />
+    <parent
+      link="Wing " />
+    <child
+      link="Aileron S" />
+    <axis
+      xyz="0.091284 0.0012502 0.99582" />
+  </joint>
+  <link
+    name="Propeller">
+    <inertial>
+      <origin
+        xyz="6.42479658363726E-09 -0.00489942502056701 -1.39357012596264E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.00658310638060369" />
+      <inertia
+        ixx="2.90735942896968E-05"
+        ixy="1.1192699993908E-13"
+        ixz="4.2247445825119E-06"
+        iyy="2.98824172594468E-05"
+        iyz="-1.37702543604631E-13"
+        izz="8.58411507486578E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Propeller.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.294117647058824 0.294117647058824 0.294117647058824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/Propeller.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor-Propeller"
+    type="continuous">
+    <origin
+      xyz="0.32694 -1.1888 -0.34325"
+      rpy="0 1.5232 1.5708" />
+    <parent
+      link="fuselage" />
+    <child
+      link="Propeller" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="horizontal tail P">
+    <inertial>
+      <origin
+        xyz="0.0403725654202214 -3.06671904522493E-05 0.0881398556359723"
+        rpy="0 0 0" />
+      <mass
+        value="0.0843629184901459" />
+      <inertia
+        ixx="0.00028531511037047"
+        ixy="-5.97252665847109E-11"
+        ixz="-4.26398654424599E-06"
+        iyy="0.000314394848144028"
+        iyz="-5.10729732704101E-09"
+        izz="2.97152974724594E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/horizontal tail P.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/horizontal tail P.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fuselage-tail1"
+    type="fixed">
+    <origin
+      xyz="1.21747576601264 -1.18877912543032 -0.475252539736524"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="fuselage" />
+    <child
+      link="horizontal tail P" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elevator P">
+    <inertial>
+      <origin
+        xyz="0.00234761120665472 -9.12172850009441E-05 0.0544028579618872"
+        rpy="0 0 0" />
+      <mass
+        value="0.00603232335815787" />
+      <inertia
+        ixx="6.02627230941831E-06"
+        ixy="7.6790303150399E-11"
+        ixz="4.5075326403622E-07"
+        iyy="6.24243643318641E-06"
+        iyz="2.69515766551106E-10"
+        izz="2.25907857842816E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/elevator P.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/elevator P.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tail-elevator"
+    type="continuous">
+    <origin
+      xyz="0.076009 9.332E-05 0.032701"
+      rpy="-0.038247 0.0099791 0.53317" />
+    <parent
+      link="horizontal tail P" />
+    <child
+      link="elevator P" />
+    <axis
+      xyz="0.07479 0.00085211 -0.9972" />
+  </joint>
+  <link
+    name="horizontal tail S">
+    <inertial>
+      <origin
+        xyz="0.0403725654202214 -3.06671904522493E-05 0.0881398556359723"
+        rpy="0 0 0" />
+      <mass
+        value="0.0843629184901459" />
+      <inertia
+        ixx="0.00028531511037047"
+        ixy="-5.97252665847109E-11"
+        ixz="-4.26398654424599E-06"
+        iyy="0.000314394848144028"
+        iyz="-5.10729732704101E-09"
+        izz="2.97152974724594E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/horizontal tail S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/horizontal tail S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fuselage-tail 2"
+    type="fixed">
+    <origin
+      xyz="1.21747576601264 -1.18877912543032 -0.475252539736524"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="fuselage" />
+    <child
+      link="horizontal tail S" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="elevator S">
+    <inertial>
+      <origin
+        xyz="0.0783560089888266 2.3233495642927E-06 -0.0871078697296799"
+        rpy="0 0 0" />
+      <mass
+        value="0.00603287790059608" />
+      <inertia
+        ixx="6.02721364922289E-06"
+        ixy="6.48970779837988E-11"
+        ixz="-4.50895135275178E-07"
+        iyy="6.24339421771599E-06"
+        iyz="-2.86615263044703E-10"
+        izz="2.25930866355363E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/elevator S.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/elevator S.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tail-elevator2"
+    type="fixed">
+    <origin
+      xyz="0.010955 -0.03986 -0.0007876"
+      rpy="0.038247 -0.0099791 0.53317" />
+    <parent
+      link="horizontal tail S" />
+    <child
+      link="elevator S" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="vertical tail">
+    <inertial>
+      <origin
+        xyz="0.0334677356343707 -3.55691510245393E-07 0.0878816037620191"
+        rpy="0 0 0" />
+      <mass
+        value="0.0828202588143957" />
+      <inertia
+        ixx="0.000283298485616193"
+        ixy="3.25082379772713E-10"
+        ixz="1.850630158288E-05"
+        iyy="0.000312634665836634"
+        iyz="-5.10950873916448E-09"
+        izz="2.99617954074207E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/vertical tail.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/vertical tail.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tail-fin"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5707963267949 0 0" />
+    <parent
+      link="horizontal tail S" />
+    <child
+      link="vertical tail" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rudder">
+    <inertial>
+      <origin
+        xyz="-0.000895070124801833 -0.000118693956365989 0.0541643422871266"
+        rpy="0 0 0" />
+      <mass
+        value="0.00724546449934962" />
+      <inertia
+        ixx="7.79732855060078E-06"
+        ixy="4.30663664615489E-11"
+        ixz="1.16677299782296E-06"
+        iyy="8.23030722105776E-06"
+        iyz="-7.92802826855665E-11"
+        izz="4.46547815815756E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/rudder.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vtol/meshes/rudder.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fin-rudder"
+    type="continuous">
+    <origin
+      xyz="0.070512 0 0.039324"
+      rpy="0.040448 0.0058598 -0.2877" />
+    <parent
+      link="vertical tail" />
+    <child
+      link="rudder" />
+    <axis
+      xyz="0.14834 0.0010737 -0.98894" />
+  </joint>
+</robot>

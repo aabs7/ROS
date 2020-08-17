@@ -1,0 +1,8 @@
+prefix=/home/abhish/tutorial_ws/install
+
+Name: vtol
+Description: Description of vtol
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
