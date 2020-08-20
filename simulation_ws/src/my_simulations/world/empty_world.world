@@ -14,7 +14,7 @@
 
     <!-- A postbox -->
     <include>
-      <uri>model://postbox</uri>
+      <uri>model://my1stmodel</uri>
     </include>
   </world>
 </sdf>
