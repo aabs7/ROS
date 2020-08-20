@@ -14,7 +14,7 @@
 
     <!-- A parrot bebop -->
     <include>
-      <uri>model://parrot_bebop_2</uri>
+      <uri>model://my_parrot_bebop_2</uri>
     </include>
   </world>
 </sdf>
