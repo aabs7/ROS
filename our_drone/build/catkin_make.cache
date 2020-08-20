@@ -1,2 +1,2 @@
 my_robot_urdf:prokura_drone:vtol
--DCATKIN_DEVEL_PREFIX=/home/abhish/tutorial_ws/devel -DCMAKE_INSTALL_PREFIX=/home/abhish/tutorial_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/abhish/tutorial_ws/our_drone/devel -DCMAKE_INSTALL_PREFIX=/home/abhish/tutorial_ws/our_drone/install -G Unix Makefiles

@@ -12,9 +12,9 @@
       <uri>model://ground_plane</uri>
     </include>
 
-    <!-- A postbox -->
+    <!-- A parrot bebop -->
     <include>
-      <uri>model://my1stmodel</uri>
+      <uri>model://parrot_bebop_2</uri>
     </include>
   </world>
 </sdf>
