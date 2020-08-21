@@ -1,0 +1,8 @@
+prefix=/home/abhish/tutorial_ws/prokura_drone/install
+
+Name: prokura_drone
+Description: Description of prokura_drone
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
