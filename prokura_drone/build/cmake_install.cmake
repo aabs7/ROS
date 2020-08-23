@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/abhish/tutorial_ws/prokura_drone/build/gtest/cmake_install.cmake")
   include("/home/abhish/tutorial_ws/prokura_drone/build/prokura_drone/cmake_install.cmake")
+  include("/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/cmake_install.cmake")
 
 endif()
 

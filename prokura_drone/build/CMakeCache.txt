@@ -272,6 +272,12 @@ UBUNTU:BOOL=TRUE
 //LSB Distrib - codename tag
 UBUNTU_BIONIC:BOOL=TRUE
 
+//Value Computed by CMake
+VTOL1_BINARY_DIR:STATIC=/home/abhish/tutorial_ws/prokura_drone/build/VTOL1
+
+//Value Computed by CMake
+VTOL1_SOURCE_DIR:STATIC=/home/abhish/tutorial_ws/prokura_drone/src/VTOL1
+
 //Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
 
@@ -341,6 +347,9 @@ prokura_drone_BINARY_DIR:STATIC=/home/abhish/tutorial_ws/prokura_drone/build/pro
 
 //Value Computed by CMake
 prokura_drone_SOURCE_DIR:STATIC=/home/abhish/tutorial_ws/prokura_drone/src/prokura_drone
+
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/melodic/share/roslaunch/cmake
 
 
 ########################
@@ -452,7 +461,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

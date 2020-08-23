@@ -455,6 +455,24 @@ clean: prokura_drone/CMakeFiles/_catkin_empty_exported_target.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory VTOL1
+
+# Convenience name for "all" pass in the directory.
+VTOL1/all:
+
+.PHONY : VTOL1/all
+
+# Convenience name for "clean" pass in the directory.
+VTOL1/clean:
+
+.PHONY : VTOL1/clean
+
+# Convenience name for "preinstall" pass in the directory.
+VTOL1/preinstall:
+
+.PHONY : VTOL1/preinstall
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

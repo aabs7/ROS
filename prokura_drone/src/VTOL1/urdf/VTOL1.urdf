@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="VTOL1">
+  <link
+    name="body">
+    <inertial>
+      <origin
+        xyz="0.0504111929768526 -0.101085838005667 -2.3713620267578E-06"
+        rpy="0 0 0" />
+      <mass
+        value="29.4768932219082" />
+      <inertia
+        ixx="0.275688335853474"
+        ixy="-0.0664232692831494"
+        ixz="6.59915920128915E-06"
+        iyy="1.15551973507844"
+        iyz="-2.68116677751175E-06"
+        izz="1.09921329572917" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_aileron">
+    <inertial>
+      <origin
+        xyz="0.0173755762436829 -0.00831222619780897 0.454319682218128"
+        rpy="0 0 0" />
+      <mass
+        value="0.00903605160646564" />
+      <inertia
+        ixx="0.00063270135370979"
+        ixy="3.81962755189131E-07"
+        ixz="-1.7839120583212E-07"
+        iyy="0.000634127353904191"
+        iyz="4.25490321086521E-07"
+        izz="1.74678841064409E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/left_aileron.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/left_aileron.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="body_l_aileron"
+    type="continuous">
+    <origin
+      xyz="0.28599 -0.38 0.006356"
+      rpy="1.5708 -1.3797 0" />
+    <parent
+      link="body" />
+    <child
+      link="left_aileron" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_aileron">
+    <inertial>
+      <origin
+        xyz="0.0173776397696669 -0.00831213697853425 -0.454206675996241"
+        rpy="0 0 0" />
+      <mass
+        value="0.00903935060430791" />
+      <inertia
+        ixx="0.000633067014976347"
+        ixy="3.82067427338937E-07"
+        ixz="1.74849700652051E-07"
+        iyy="0.000634493338873257"
+        iyz="-4.26287317599231E-07"
+        izz="1.74761288104254E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/right_aileron.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/right_aileron.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="b_r_aileron"
+    type="continuous">
+    <origin
+      xyz="0.28599 0.38 0.006356"
+      rpy="1.5708 0.80349 0" />
+    <parent
+      link="body" />
+    <child
+      link="right_aileron" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="tail">
+    <inertial>
+      <origin
+        xyz="0.104477989245471 -0.102859991867877 0.10285976304222"
+        rpy="0 0 0" />
+      <mass
+        value="0.0666933871810262" />
+      <inertia
+        ixx="0.00131879570198045"
+        ixy="6.22636459353277E-05"
+        ixz="-6.2278503704694E-05"
+        iyy="0.000753735100418986"
+        iyz="5.2686826813289E-07"
+        izz="0.00075372875471175" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/tail.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.698039215686274 0.698039215686274 0.698039215686274 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/tail.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="body_tail"
+    type="fixed">
+    <origin
+      xyz="1.16 0 0.34355"
+      rpy="2.3562 0 0" />
+    <parent
+      link="body" />
+    <child
+      link="tail" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_ruddervator">
+    <inertial>
+      <origin
+        xyz="0.0296809435420739 -0.0071512028218732 0.243672385876262"
+        rpy="0 0 0" />
+      <mass
+        value="0.012294771856547" />
+      <inertia
+        ixx="0.000250341833083767"
+        ixy="3.24985459736578E-10"
+        ixz="-2.28974860119505E-07"
+        iyy="0.000255955032624215"
+        iyz="-6.18801276598573E-09"
+        izz="6.05563141121459E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/left_ruddervator.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.988235294117647 0.737254901960784 0.517647058823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/left_ruddervator.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tail_lrv"
+    type="continuous">
+    <origin
+      xyz="0.16775 0.0071531 0"
+      rpy="0 0 2.1596" />
+    <parent
+      link="tail" />
+    <child
+      link="left_ruddervator" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_ruddervator">
+    <inertial>
+      <origin
+        xyz="0.0405722773660111 -0.245271646705892 0.00845649756367062"
+        rpy="0 0 0" />
+      <mass
+        value="0.0122947626571706" />
+      <inertia
+        ixx="0.000250340480340787"
+        ixy="2.29027765159179E-07"
+        ixz="-3.22626900306597E-10"
+        iyy="6.05556171096418E-06"
+        iyz="-6.17190727275402E-09"
+        izz="0.00025595361018012" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/right_ruddervator.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.988235294117647 0.737254901960784 0.517647058823529 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://VTOL1/meshes/right_ruddervator.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tail_rrv"
+    type="continuous">
+    <origin
+      xyz="0.15943 0.0015995 0"
+      rpy="0 0.82964 0" />
+    <parent
+      link="tail" />
+    <child
+      link="right_ruddervator" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+</robot>

@@ -43,3 +43,10 @@
 /home/abhish/tutorial_ws/prokura_drone/build/prokura_drone/CMakeFiles/_catkin_empty_exported_target.dir
 /home/abhish/tutorial_ws/prokura_drone/build/prokura_drone/CMakeFiles/rebuild_cache.dir
 /home/abhish/tutorial_ws/prokura_drone/build/prokura_drone/CMakeFiles/install.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/install/strip.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/edit_cache.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/list_install_components.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/test.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/install/local.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/rebuild_cache.dir
+/home/abhish/tutorial_ws/prokura_drone/build/VTOL1/CMakeFiles/install.dir

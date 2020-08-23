@@ -1,0 +1,8 @@
+prefix=/home/abhish/tutorial_ws/prokura_drone/devel
+
+Name: VTOL1
+Description: Description of VTOL1
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

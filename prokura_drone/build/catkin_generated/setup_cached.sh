@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/abhish/tutorial_ws/prokura_drone/devel:$CMAKE_PREFIX_PATH"
 export PWD="/home/abhish/tutorial_ws/prokura_drone/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/abhish/tutorial_ws/prokura_drone/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/abhish/tutorial_ws/prokura_drone/src:$ROS_PACKAGE_PATH"
